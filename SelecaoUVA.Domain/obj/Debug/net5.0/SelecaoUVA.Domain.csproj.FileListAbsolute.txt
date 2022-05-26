@@ -1,0 +1,15 @@
+C:\SelecaoUVA_MarcosAntunes\SelecaoUVAMarcosAntunes\SelecaoUVA.Domain\bin\Debug\net5.0\SelecaoUVA.Domain.deps.json
+C:\SelecaoUVA_MarcosAntunes\SelecaoUVAMarcosAntunes\SelecaoUVA.Domain\bin\Debug\net5.0\SelecaoUVA.Domain.runtimeconfig.json
+C:\SelecaoUVA_MarcosAntunes\SelecaoUVAMarcosAntunes\SelecaoUVA.Domain\bin\Debug\net5.0\SelecaoUVA.Domain.runtimeconfig.dev.json
+C:\SelecaoUVA_MarcosAntunes\SelecaoUVAMarcosAntunes\SelecaoUVA.Domain\bin\Debug\net5.0\SelecaoUVA.Domain.dll
+C:\SelecaoUVA_MarcosAntunes\SelecaoUVAMarcosAntunes\SelecaoUVA.Domain\bin\Debug\net5.0\ref\SelecaoUVA.Domain.dll
+C:\SelecaoUVA_MarcosAntunes\SelecaoUVAMarcosAntunes\SelecaoUVA.Domain\bin\Debug\net5.0\SelecaoUVA.Domain.pdb
+C:\SelecaoUVA_MarcosAntunes\SelecaoUVAMarcosAntunes\SelecaoUVA.Domain\obj\Debug\net5.0\SelecaoUVA.Domain.csproj.AssemblyReference.cache
+C:\SelecaoUVA_MarcosAntunes\SelecaoUVAMarcosAntunes\SelecaoUVA.Domain\obj\Debug\net5.0\SelecaoUVA.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\SelecaoUVA_MarcosAntunes\SelecaoUVAMarcosAntunes\SelecaoUVA.Domain\obj\Debug\net5.0\SelecaoUVA.Domain.AssemblyInfoInputs.cache
+C:\SelecaoUVA_MarcosAntunes\SelecaoUVAMarcosAntunes\SelecaoUVA.Domain\obj\Debug\net5.0\SelecaoUVA.Domain.AssemblyInfo.cs
+C:\SelecaoUVA_MarcosAntunes\SelecaoUVAMarcosAntunes\SelecaoUVA.Domain\obj\Debug\net5.0\SelecaoUVA.Domain.csproj.CoreCompileInputs.cache
+C:\SelecaoUVA_MarcosAntunes\SelecaoUVAMarcosAntunes\SelecaoUVA.Domain\obj\Debug\net5.0\SelecaoUVA.Domain.dll
+C:\SelecaoUVA_MarcosAntunes\SelecaoUVAMarcosAntunes\SelecaoUVA.Domain\obj\Debug\net5.0\ref\SelecaoUVA.Domain.dll
+C:\SelecaoUVA_MarcosAntunes\SelecaoUVAMarcosAntunes\SelecaoUVA.Domain\obj\Debug\net5.0\SelecaoUVA.Domain.pdb
+C:\SelecaoUVA_MarcosAntunes\SelecaoUVAMarcosAntunes\SelecaoUVA.Domain\obj\Debug\net5.0\SelecaoUVA.Domain.genruntimeconfig.cache
