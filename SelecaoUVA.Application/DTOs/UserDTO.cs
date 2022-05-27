@@ -17,6 +17,7 @@ namespace SelecaoUVA.Application.DTOs
         public string Phone { get; set; }
 
         [Display(Name = "E-mail")]
+        [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
     }
 }

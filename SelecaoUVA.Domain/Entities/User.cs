@@ -32,10 +32,13 @@ namespace SelecaoUVA.Domain.Entities
         [Display(Name = "E-mail")]
         [Column("EMAIL")]
         [Required(ErrorMessage = "Este campo é obrigatório")]
+        [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
 
         [Display(Name = "Criado Em")]
         [Column("CREATIONDATE")]
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
         public DateTime CreationDate { get; set; }
 
         [Display(Name = "Status")]

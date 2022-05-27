@@ -10,7 +10,13 @@ namespace SelecaoUVA.Application.Helpers
         public SelecaoUVAProfile()
         {
             CreateMap<User, UserDTO>().ReverseMap();
-            CreateMap<User, UserViewDTO>().ReverseMap();
+
+            CreateMap<UserViewDTO, User>().ReverseMap()
+                .ForMember(to => to.CreationDate, opt => opt.MapFrom(from => from.CreationDate.ToShortTimeString()));
+            
+            CreateMap<User, UserViewDTO>().ReverseMap()
+                 .ForMember(to => to.CreationDate, opt => opt.MapFrom(from => from.CreationDate.ToShortTimeString()));
+
             CreateMap<User, UserUpdateDTO>().ReverseMap();
         }
     }
