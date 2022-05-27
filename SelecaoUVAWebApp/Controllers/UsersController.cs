@@ -82,25 +82,7 @@ namespace SelecaoUVAWebApp.Controllers
                 return RedirectToAction(nameof(Index));
             }
             return View(user);
-        }
-
-        public async Task<IActionResult> Delete(int id)
-        {
-            var user = await _userService.GetUserByIdAsync(id);
-            if (user == null)
-            {
-                return NotFound();
-            }
-            return View(user);
-        }
-
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            await _userService.DeleteUser(id);
-            return RedirectToAction(nameof(Index));
-        }
+        }  
 
         public async Task<IActionResult> Details(int id)
         {
@@ -112,9 +94,11 @@ namespace SelecaoUVAWebApp.Controllers
             return View(user);
         }
 
-        //private bool UserExists(int id)
-        //{
-        //    return _context.Users.Any(e => e.Id == id);
-        //}
+        public async Task<IActionResult> ConfirmDelete(int Id)
+        {
+            await _userService.DeleteUser(Id);
+            return RedirectToAction(nameof(Index));
+        }
+       
     }
 }
