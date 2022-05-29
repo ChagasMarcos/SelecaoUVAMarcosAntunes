@@ -18,12 +18,13 @@ namespace SelecaoUVAWebApp.Controllers
             _userService = userService;
         }
 
+        [HttpGet]
         public async Task<IActionResult> Index()
         {
             return View(await _userService.GetAllUsersAsync());     
         }
 
-        
+        [HttpGet]
         public IActionResult Create()
         {
             return View();
@@ -44,15 +45,18 @@ namespace SelecaoUVAWebApp.Controllers
                 return RedirectToAction(nameof(Index));
                 }
                 catch (Exception ex)
-                { 
-                TempData["MSG_E"] = ex.Message;
-                return RedirectToAction(nameof(Create), user);            
+                {
+                    UserDTO userReturn = new UserDTO();
+                    userReturn = user;
+
+                    TempData["MSG_E"] = ex.Message;
+                    return RedirectToAction(nameof(Create), userReturn);            
                 }
             }
             return View(user);
         }
 
-
+        [HttpGet]
         public async Task<IActionResult> Edit(int id)
         {
 
@@ -75,15 +79,16 @@ namespace SelecaoUVAWebApp.Controllers
                 {
                     await _userService.UpdateUser(id, user);
                 }
-                catch (DbUpdateConcurrencyException)
+                catch (Exception ex)
                 {
-                   
+                    throw new Exception($"Opa, deu erro. Erro: {ex.Message}");
                 }
                 return RedirectToAction(nameof(Index));
             }
             return View(user);
-        }  
+        }
 
+        [HttpGet]
         public async Task<IActionResult> Details(int id)
         {
             var user = await _userService.GetUserByIdAsync(id);
@@ -94,6 +99,7 @@ namespace SelecaoUVAWebApp.Controllers
             return View(user);
         }
 
+        [HttpPost]
         public async Task<IActionResult> ConfirmDelete(int Id)
         {
             await _userService.DeleteUser(Id);

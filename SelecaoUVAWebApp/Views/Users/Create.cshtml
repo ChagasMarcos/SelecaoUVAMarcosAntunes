@@ -6,9 +6,9 @@
 
 <h4>Novo Usuário</h4>
 <hr />
-@if(TempData["MSG_E"] != null)
+            @if(TempData["MSG_E"] != null)
             {
-                <p class="alert alert-danger">@TempData["MSG_E"]</p>
+                <p id="message" class="alert alert-danger">@TempData["MSG_E"]</p>
             }
 <div class="row">
     <div class="col-md-4">
@@ -21,7 +21,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="FullName" class="control-label"></label>
-                <input asp-for="FullName" class="form-control" />
+                <input asp-for="FullName"  class="form-control" />
                 <span asp-validation-for="FullName" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -41,7 +41,6 @@
         </form>
     </div>
 </div>
-
 <div>
     <a asp-action="Index">Voltar à Lista</a>
 </div>
@@ -51,6 +50,13 @@
 }
 
 <script>
+
+    window.onload = function () {
+        setTimeout(function () {
+            document.querySelector('#message').remove();
+        }, 4000);
+    };
+
     function mascara_cpf() {
         var cpf = document.getElementById('cpf')
         if (cpf.value.length == 3 || cpf.value.length == 7) {

@@ -60,7 +60,7 @@ namespace SelecaoUVA.Application
                         var userReturn = await _userPersist.GetUserByIdAsync(user.Id);
                         return _mapper.Map<UserDTO>(userReturn);
                     }
-                    return null;
+                    return model;
                 }
                 catch (Exception ex)
                 {
